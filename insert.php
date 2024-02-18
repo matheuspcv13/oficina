@@ -4,7 +4,8 @@ include_once __DIR__ . "/templates/header.php" ;
 
 <div class="container-xl">
     <h1 class="mb-4">Cadastrar Cliente</h1>
-    <form method="POST" action="../oficina/funcionalidades/cadastroCliente.php">
+    <form method="POST" action="<?= $BASE_URL ?>config/process.php">
+        <input type="hidden" name="type" value="insert">
         <div class="row">
             <div class="col-md-6">
                 <div class="mb-3">
